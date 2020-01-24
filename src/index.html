@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School Management System</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1b920a1d84.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container text-center">
+    <h1 class="bg-light py-4 text-info"><i class="fas fa-graduation-cap"></i> School Management</h1>
+</div>
+<div class="d-flex justify-content-center">
+    <form class="w-50">
+        <input type="text" id="studid" class="form-control"  placeholder="Student ID" autocomplete="off">
+        <input type="text" id="studname" class="form-control" placeholder="Student Name" autocomplete="off">
+        <input type="text" id="course" class="form-control" placeholder="Course" autocomplete="off">
+        <input type="number" id="contact" class="form-control" placeholder="Contact" autocomplete="off">
+        <div class="row">
+            <div class="col">
+                <input type="text" id="house" class="form-control m-0" placeholder="House no/Street" autocomplete="off">
+            </div>
+        
+            <div class="col">
+                <input type="text" id="city" class="form-control m-0" placeholder="City" autocomplete="off">
+            </div>
+            
+        </div>
+    </form>
+</div>
+
+<!--Create, update, read and delete button-->
+<div class="d-flex justify-content-center">
+    <button class="btn btn-success" id="btn-create">Create</button>
+    <button class="btn btn-primary" id="btn-read">Read</button>
+    <button class="btn btn-warning" id="btn-update">Update</button>
+    <button class="btn btn-danger" id="btn-delete">Delete All</button>
+</div>
+
+<div class="container d-flex">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Student ID</th>
+            <th scope="col">Student Name</th>
+            <th scope="col">Course</th>
+            <th scope="col">Contact</th>
+            <th scope="col">House no/Street</th>
+            <th scope="col">City</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td><i class="fas fa-edit btnedit"></i></td>
+            <td><i class="fas fa-trash-alt btndelete"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td><i class="fas fa-edit btnedit"></i></td>
+            <td><i class="fas fa-trash-alt btndelete"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td><i class="fas fa-edit btnedit"></i></td>
+            <td><i class="fas fa-trash-alt btndelete"></i></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--Dexie API-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/2.0.4/dexie.min.js" 
+integrity="sha256-ubffRsoh9QK5xJC/u3s3drtGFBZUHBm9bHFRzYvtkJI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/2.0.4/dexie.js" 
+integrity="sha256-ZM54td1+izs/LfFnGFzzfxvfu6oG3xxwoI77Ch5XrrI=" crossorigin="anonymous"></script>
+
+<!--Custom Javascript main.js-->
+<script src="../js/main.js" type="module"></script>
+</body>
+
+</html>
